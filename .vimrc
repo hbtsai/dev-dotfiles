@@ -98,7 +98,7 @@ filetype indent on
 filetype plugin indent on
 
 syn on
-set rnu
+"set rnu
 set ai
 set tabstop=4
 set sw=4
@@ -180,14 +180,19 @@ let g:neocomplcache_enable_auto_select = 1
 imap <expr><c-y> neocomplcache#close_popup()
 imap <expr><C-e> neocomplcache#cancel_popup()
 
+"syntastic options
+"let g:syntastic_mode_map = { 'mode': 'passive',
+"            \ 'active_filetypes': ['c'], 
+"            \ 'passive_filetypes': []}
+
 "Markdown language syntax settings
 augroup mkd
 autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:>
 augroup END
 
 " relative numbering
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
+"autocmd InsertEnter * :set number
+"autocmd InsertLeave * :set relativenumber
 
 "move vimwiki to dropbox
 let g:vimwiki_list = [{'path': '~/Dropbox/dev-dotfiles/vimwiki/',
