@@ -16,6 +16,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'ColorSchemeMenuMaker'
 Bundle 'ScrollColors'
 Bundle 'desert-warm-256'
+Bundle 'a.vim'
 
 Bundle 'YankRing.vim'
 Bundle 'VisIncr'
@@ -68,9 +69,9 @@ Bundle 'humiaozuzu/TabBar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/syntastic'
+"Bundle 'scrooloose/syntastic'
 
-Bundle 'humiaozuzu/fcitx-status'
+"Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
 Bundle 'tpope/vim-repeat'
@@ -187,6 +188,12 @@ augroup END
 " relative numbering
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
+
+"move vimwiki to dropbox
+let g:vimwiki_list = [{'path': '~/Dropbox/dev-dotfiles/vimwiki/',
+      \ 'path_html': '~/Dropbox/dev-dotfiles/vimwiki/html',
+      \ 'html_header': '~/Dropbox/dev-dotfiles/vimwiki/template/header.tpl',
+      \ 'html_footer': '~/Dropbox/dev-dotfiles/vimwiki/template/footee.tpl'}]
 
 if has("gui_running")
   set guifont=Monaco\ 11
