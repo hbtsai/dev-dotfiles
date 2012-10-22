@@ -18,6 +18,7 @@ Bundle 'ScrollColors'
 Bundle 'desert-warm-256'
 Bundle 'a.vim'
 
+Bundle 'taglist.vim'
 Bundle 'YankRing.vim'
 Bundle 'VisIncr'
 Bundle 'Align'
